@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TwoOrMoreActivity"
+    android:background="@drawable/backgr"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="0dp">
+
+  <TextView
+      android:id="@+id/txt_balance_twoormore"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:padding="4dp"
+      android:text="@string/zero"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+      android:textColor="#FFFFFF"
+      app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+      app:layout_constraintStart_toStartOf="@+id/guideline_v" />
+
+  <TextView
+      android:id="@+id/txt_balance_label3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:text="@string/coins"
+      android:textColor="#FFFFFF"
+      app:layout_constraintBottom_toBottomOf="@+id/txt_balance_twoormore"
+      app:layout_constraintEnd_toStartOf="@+id/guideline_v"
+      app:layout_constraintTop_toTopOf="@+id/txt_balance_twoormore"
+      app:layout_constraintVertical_bias="0.485" />
+
+  <TextView
+      android:id="@+id/txt_die3"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:background="@color/die"
+      android:contentDescription="@string/six_faced_die3"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+      android:textColor="@color/black"
+      android:textSize="80sp"
+      app:layout_constraintEnd_toStartOf="@+id/guideline_v"
+      app:layout_constraintTop_toTopOf="@+id/guideline_h" />
+
+  <TextView
+      android:id="@+id/txt_die2"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginBottom="8dp"
+      android:background="@color/die"
+      android:contentDescription="@string/six_faced_die2"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+      android:textColor="@color/black"
+      android:textSize="80sp"
+      app:layout_constraintBottom_toTopOf="@+id/guideline_h"
+      app:layout_constraintStart_toStartOf="@+id/guideline_v" />
+
+  <TextView
+      android:id="@+id/txt_die4"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:background="@color/die"
+      android:contentDescription="@string/six_faced_die4"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+      android:textColor="@color/black"
+      android:textSize="80sp"
+      app:layout_constraintStart_toStartOf="@+id/guideline_v"
+      app:layout_constraintTop_toTopOf="@+id/guideline_h" />
+
+  <TextView
+      android:id="@+id/txt_die1"
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+      android:background="@color/die"
+      android:contentDescription="@string/six_faced_die1"
+      android:textAlignment="center"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+      android:textColor="@color/black"
+      android:textSize="80sp"
+      app:layout_constraintBottom_toTopOf="@+id/guideline_h"
+      app:layout_constraintEnd_toStartOf="@+id/guideline_v" />
+
+  <Button
+      android:id="@+id/btn_go"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/die"
+      android:text="@string/go"
+      android:textColor="#212121"
+      app:layout_constraintBottom_toBottomOf="@+id/edit_wager"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/edit_wager"
+      app:layout_constraintTop_toTopOf="@+id/edit_wager" />
+
+  <EditText
+      android:id="@+id/edit_wager"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="32dp"
+      android:autofillHints="Wager"
+      android:ems="10"
+      android:hint="@string/wager"
+      android:inputType="number"
+      android:minHeight="48dp"
+      android:textAlignment="center"
+      android:textColor="#F6F6F6"
+      android:textColorHint="#757575"
+      app:layout_constraintBottom_toTopOf="@+id/txt_die1"
+      app:layout_constraintEnd_toStartOf="@+id/btn_go"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintHorizontal_chainStyle="packed"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_h"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_percent="0.6" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_v"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.5" />
+
+  <RadioGroup
+      android:id="@+id/radioGroup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:orientation="horizontal"
+      app:layout_constraintBottom_toTopOf="@+id/edit_wager"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+    <RadioButton
+        android:id="@+id/btn_2alike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:checked="true"
+        android:text="@string/two_alike"
+        android:textColor="#FFFFFF" />
+
+    <RadioButton
+        android:id="@+id/btn_3alike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/three_alike"
+        android:textColor="#FFFFFF" />
+
+    <RadioButton
+        android:id="@+id/btn_4alike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/four_alike"
+        android:textColor="#FFFFFF" />
+  </RadioGroup>
+
+  <Button
+      android:id="@+id/btn_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="32dp"
+      android:text="@string/back"
+      android:textColor="#212121"
+      app:layout_constraintEnd_toStartOf="@+id/btn_info"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/txt_die3" />
+
+  <Button
+      android:id="@+id/btn_info"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/info"
+      android:textColor="#212121"
+      app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/btn_back"
+      app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

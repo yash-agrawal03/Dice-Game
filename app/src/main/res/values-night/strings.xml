@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="wallet_info">Click to roll the die. Every time it hits a six, you earn five points.</string>
+  <string name="coins">Coins</string>
+  <string name="zero">0</string>
+  <string name="six_faced_die1">Six faced die1</string>
+  <string name="six_faced_die2">Six faced die2</string>
+  <string name="six_faced_die3">Six faced die3</string>
+  <string name="six_faced_die4">Six faced die4</string>
+  <string name="launch_two_or_more">Launch BlackJack</string>
+  <string name="stop">Stop</string>
+  <string name="wager">Wager</string>
+  <string name="roll">Roll</string>
+  <string name="go">Go</string>
+  <string name="two_alike">2 Alike</string>
+  <string name="three_alike">3 alike</string>
+  <string name="four_alike">4 alike</string>
+  <string name="congrats">Congratulations!</string>
+  <string name="back">Back</string>
+  <string name="info">Info</string>
+</resources>
